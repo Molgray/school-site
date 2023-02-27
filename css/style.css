@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    font-family:montserrat;
 }
 
 html {
@@ -12,6 +13,7 @@ body {
     margin: 1.5rem auto;
     width:90%;
     min-width:56.25rem;
+    
 }
 
 /* Layout */
@@ -41,6 +43,8 @@ figure img {
 
 figcaption {
     margin:.375rem 0;
+    size: 0.75;
+    margin-bottom: 2;
 }
 
 .long-list {
@@ -78,13 +82,42 @@ header, footer {
 
 
 /* Imported Typfaces */
-
-
-
+@font-face {
+    font-family:josefinslab;
+    src: url(../fonts/josefinslab-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:montserrat;
+    src: url(../fonts/montserrat-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
 
 
 /* Typography Styles */
+header{
+    letter-spacing: 0.125;
+    font-family:josefinslab, sans-serif ;
+}
+h1{
+    font-size: 3.75rem;
+    margin: 1.125px;
+    text-align: center;
 
+}
+h2{
+    font-size: 1.5rem;
+}
+p, li{
+    font-size: 0.75rem;
+    letter-spacing: 0.031rem;
+    word-spacing: 0.125rem;
+}
+.paraft{
+    text-indent: 1.5;
+}
 
 
 
@@ -92,28 +125,77 @@ header, footer {
 
 /* Link Styling */
 
-
-
+a:link { 
+    text-decoration: none; 
+    color: #33658A;
+};
+a:focus { 
+    text-decoration: none; 
+};
+a:hover { 
+    text-decoration: none; 
+};
 
 
 
 /* List Styling */
 
+ul{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    margin-right:0;
+    margin-left:0;
+    list-style-type: square;
+}
+ol{
+    text-transform: lowercase;
+    list-style-type:default;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    margin-right:0;
+    margin-left:0;
+}
 
-
-
+.long-list:hover{
+    text-transform: uppercase;
+}
 
 
 /* Navigation Menu */
 
 
 
+nav a{
+    height:30px;
+    width:100%;
+    display: inline-block;
+    text-align:center;
+    font-size:1.125rem;
+    margin-bottom:1.5rem;
+    border:.063rem solid #33658A;
+    padding:0;
+    margin-top:0.25
+}
+nav a:focus{
+    color: #FFF;
+    background-color:#33658A;
 
 
+}
+nav a:hover{
+    color: #FFF;
+    background-color:#33658A;
+}
+nav a:active{
+    color: #FFF;
+    background-color:#000;
+}
 
 /* Footer Styles */
 
-
+footer{
+    text-align:center;
+}
 
 
 
